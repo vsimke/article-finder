@@ -175,10 +175,12 @@ A result is considered a match when `similar_text()` similarity between the SERP
 ### Release
 
 ```bash
-.github/release.sh 1.0.0
+.github/release.sh patch   # 1.2.3 → 1.2.4  (default)
+.github/release.sh minor   # 1.2.3 → 1.3.0
+.github/release.sh major   # 1.2.3 → 2.0.0
 ```
 
-This tags `v1.0.0` locally and pushes it to origin, triggering any tag-based CI jobs.
+The script auto-detects the latest `vX.Y.Z` tag, bumps the requested segment, prompts for confirmation, then tags and pushes.
 
 ## License
 
