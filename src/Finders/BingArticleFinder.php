@@ -29,7 +29,7 @@ class BingArticleFinder extends Finder
         );
 
         if ($article['link'] ?? null) {
-            $article['finder'] = (string) parse_url(BingArticleParser::BASE_URI, PHP_URL_HOST);
+            $article['finder'] = parse_url(BingArticleParser::BASE_URI, PHP_URL_HOST);
 
             return $article;
         }

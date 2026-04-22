@@ -13,7 +13,7 @@ use Vsimke\ArticleFinder\Scraper\Parsers\AbstractParser;
 
 class HQueryScraper
 {
-    private ClientInterface $client;
+    private readonly ClientInterface $client;
 
     /** @var array<string, string> */
     private array $requestHeaders;

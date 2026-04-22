@@ -24,7 +24,7 @@ abstract class Finder
      */
     public function find(array $parameters): array
     {
-        if ($this->next === null) {
+        if (!$this->next instanceof \Vsimke\ArticleFinder\Finders\Finder) {
             return [];
         }
 

@@ -29,7 +29,7 @@ class GoogleArticleFinder extends Finder
         );
 
         if ($article['link'] ?? null) {
-            $article['finder'] = (string) parse_url(GoogleArticleParser::BASE_URI, PHP_URL_HOST);
+            $article['finder'] = parse_url(GoogleArticleParser::BASE_URI, PHP_URL_HOST);
 
             return $article;
         }

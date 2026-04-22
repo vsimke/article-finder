@@ -8,18 +8,14 @@ use duzun\hQuery;
 
 abstract class AbstractParser
 {
-    /** @var array<string, mixed>|null */
-    protected ?array $parameters;
-
     /** @var array<string, string[]> */
     protected array $responseHeaders = [];
 
     /**
      * @param array<string, mixed>|null $parameters
      */
-    public function __construct(?array $parameters = null)
+    public function __construct(protected ?array $parameters = null)
     {
-        $this->parameters = $parameters;
     }
 
     /**
