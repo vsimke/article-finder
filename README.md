@@ -14,7 +14,7 @@ Given a site domain and article title, the package queries Bing first and falls 
 
 ## Requirements
 
-- PHP 8.1+
+- PHP 8.2+
 - Guzzle 7+
 
 ## Installation
